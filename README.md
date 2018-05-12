@@ -1,2 +1,4 @@
 # ButtonForge
-WoW add-on, ButtonForge
+
+.
+#### Author: Alternator (Massiner of Nathrezim)
