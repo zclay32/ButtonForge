@@ -1662,8 +1662,12 @@ end
 -------------------------------------------]]
 function Util.GetFullSpellName(Name, Rank)
 	if (Name) then
-		return Name.."("..Rank..")";
-	end
+		if (Rank == nil) then
+			return Name;
+		else
+			return Name.."("..Rank..")";
+		end
+	end	
 end
 
 function Util.GetSpellId(NameRank)
@@ -1713,7 +1717,10 @@ function Util.CacheSpellIndexes()
 		ItemType, Id = GetSpellBookItemInfo(i, BOOKTYPE_SPELL);
 		--local Name, Rank, Icon, PowerCost, IsFunnel, PowerType = GetSpellInfo(i, BOOKTYPE_SPELL);
 		local Name, Rank, Icon, PowerCost, IsFunnel, PowerType = GetSpellInfo(Id);
-		local NameRank = Util.GetFullSpellName(Name, Rank);
+		
+		local spellName, spellSubName = GetSpellBookItemName(i, BOOKTYPE_SPELL)
+		local NameRank = Util.GetFullSpellName(spellName, spellSubName);
+	
 		if (ItemType == "SPELL") then
 			NewSI[NameRank] = i;
 			
