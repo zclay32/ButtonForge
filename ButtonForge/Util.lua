@@ -767,8 +767,7 @@ function Util.NewBar(Left, Top, BarSave)
 		BarSave["Left"] = Left;
 		BarSave["Top"] = Top;
 		table.insert(ButtonForgeSave.Bars, BarSave);
-		PlaySoundFile("Sound\\Interface\\Pickup\\Putdownsmallmetal.Wav");
-		--PlaySoundFile("Sound\\Item\\Weapons\\Mace2h\\2hmacehitplate1a.Wav");
+		PlaySound(177, "Master");
 	end
 	
 	if (#(Util.InactiveBars) > 0) then
@@ -805,7 +804,7 @@ function Util.NewBonusBar(Left, Top)
 	BarSave["ButtonsLocked"] = true;
 	BarSave["GridAlwaysOn"] = false;
 	table.insert(ButtonForgeSave.Bars, BarSave);
-	PlaySoundFile("Sound\\Interface\\Pickup\\Putdownsmallmetal.Wav");
+	PlaySound(177, "Master");
 	return Util.NewBar(Left, Top, BarSave);
 end
 
@@ -819,6 +818,7 @@ function Util.DeallocateBar(Value)
 	table.insert(Util.InactiveBars, Value);
 	local Left, Top = Value.ControlFrame:GetLeft(), Value.ControlFrame:GetTop();
 	Util.RefreshTab(Left, Top);
+	PlaySound(6523, "Master");
 end
 
 function Util.DetachBar(Value)
