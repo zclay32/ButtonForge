@@ -1,4 +1,4 @@
-# ButtonForge
+# ButtonForge - Battle For Azeroth
 
 .
 #### Author: Alternator (Massiner of Nathrezim)
