@@ -1,4 +1,4 @@
-# ButtonForge
+# ButtonForge - Legion
 
 .
 #### Author: Alternator (Massiner of Nathrezim)
