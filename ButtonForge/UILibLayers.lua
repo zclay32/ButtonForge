@@ -22,7 +22,7 @@ function UILib.ConfigureModeEnabled()
 	EventFull.RefreshButtons = true;
 	EventFull.RefChecked = true;
 	EventFull.RefUsable = true;
-	PlaySound("igCharacterInfoOpen");
+	PlaySound(839, "Master");
 end
 
 
@@ -39,7 +39,7 @@ function UILib.ConfigureModeDisabled()
 	EventFull.RefreshButtons = true;
 	EventFull.RefChecked = true;
 	EventFull.RefUsable = true;
-	PlaySound("igCharacterInfoClose");
+	PlaySound(840, "Master");
 end
 
 
