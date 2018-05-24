@@ -2,4 +2,4 @@
 
 .
 #### Author: Alternator (Massiner of Nathrezim)
-#### BFA Fixes: DT85 (Zaranias - Aman'thul)
+#### Bug & BFA Fixes: DT85 (Zaranias - Aman'thul)
