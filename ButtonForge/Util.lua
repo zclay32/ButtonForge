@@ -1661,9 +1661,7 @@ end
 	Spell Functions
 -------------------------------------------]]
 function Util.GetFullSpellName(Name, Rank)
-	if (Name) then
-		return Name.."("..Rank..")";
-	end
+	return Name;
 end
 
 function Util.GetSpellId(NameRank)
